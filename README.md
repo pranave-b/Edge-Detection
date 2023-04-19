@@ -18,8 +18,6 @@ Read the image and convert the bgr image to gray scale image.
 
 Use any filters for smoothing the image to reduse the noise.
 
-
-
 ### Step4:
 
 Apply the respective filters -Sobel,Laplacian edge dectector and Canny edge dector.
@@ -105,8 +103,9 @@ plt.xticks([])
 plt.yticks([])
 plt.show()
 
-# CANNY EDGE DETECTORcanny_edge = cv2.Canny(image,120,150)
+# CANNY EDGE DETECTOR
 
+canny_edge = cv2.Canny(image,120,150)
 plt.figure(figsize = (8,8))
 plt.subplot(1,2,1)
 plt.imshow(image,cmap = 'gray')
@@ -117,10 +116,6 @@ plt.title('Canny Edges')
 plt.xticks([])
 plt.yticks([])
 plt.show()
-
-
-
-
 ```
 ## Output:
 ### SOBEL EDGE DETECTOR
